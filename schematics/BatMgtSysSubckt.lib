@@ -1,0 +1,41 @@
+*
+
+.subckt BatMgtSysSubckt
+
+
+.include "C:/Users/DELL/Documents/Jonny's project/New_schematic_phms/irlml6402.spi"
+.include "C:/Users/DELL/Downloads/MCP6561_MM_B/MCP6561.txt"
+.include "C:/Users/DELL/Downloads/sclm275/SN74AHC1G02.cir"
+.include "C:/Users/DELL/Downloads/slvmcy1/TLV76701_TRANS.lib"
+.include "C:/Users/DELL/Downloads/ss14.txt"
+R5 /V_REF- +VCC 10k
+D1 Net-_D1-A_ +BAT SS14
+C3 GND Net-_D1-A_ 10u
+R10 Net-_D1-A_ /VOUT 0.885
+R3 /V_REF+ GND 10k
+R1 Net-_R1-Pad2_ +BAT 6.04k
+R2 /V_REF+ Net-_R1-Pad2_ 60
+VBT1 +BAT GND DC 3.5 
+VCC1 +VCC GND DC 5 
+R13 Net-_U3-+_ GND 10k
+R6 /V_REF- GND 10k
+XU8 /V_IN /US_OUT /TH_OUT +VCC GND SN74AHC1G02
+XU1 /V_REF+ /V_REF- +VCC GND /US_OUT MCP6561
+R4 /US_OUT /V_REF+ 490k
+R11 Net-_U3--_ GND 10k
+R7 Net-_U3--_ +VCC 3.8k
+XU3 Net-_U3-+_ Net-_U3--_ +VCC GND /TH_OUT MCP6561
+R12 Net-_U3-+_ +VCC 10k
+R9 GND Net-_U2-FB_ 10k
+C1 GND +VCC 100u
+R8 Net-_U2-FB_ /VOUT 40.8k
+C2 GND /VOUT 10u
+XU2 /V_IN Net-_U2-FB_ GND +VCC /VOUT TLV76701_TRANS
+XQ5 /V_d2 Net-_BT3-+_ Net-_Q5-S_ irlml6402
+VBT3 Net-_BT3-+_ GND DC 2.0 
+R17 /V_d2 GND 10k
+R18 /V_d1 GND 10k
+R21 Net-_Q5-S_ /V_d1 100
+XQ6 /V_d1 +VCC +BAT irlml6402
+
+.ends

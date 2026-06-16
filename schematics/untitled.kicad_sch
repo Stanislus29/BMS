@@ -1,0 +1,379 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d1cd7d07-ebd8-49a0-8624-84b0c42da116")
+	(paper "A4")
+	(lib_symbols)
+	(rectangle
+		(start 125.73 57.658)
+		(end 119.38 62.738)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "14959c05-66c0-4228-967a-2fc9b197b481")
+	)
+	(rectangle
+		(start 109.22 57.658)
+		(end 115.57 62.738)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2342102d-439e-4d59-b946-dd36b9fc3201")
+	)
+	(rectangle
+		(start 189.23 53.34)
+		(end 195.58 58.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "378c50e3-f578-488a-91ff-17732921c6dc")
+	)
+	(rectangle
+		(start 87.63 54.61)
+		(end 93.98 59.69)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "397fc4e8-288d-4171-927e-38337e270647")
+	)
+	(rectangle
+		(start 190.754 87.884)
+		(end 195.834 94.234)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5a9b8e1d-2ebb-4896-a82e-b4b9dbe972b6")
+	)
+	(rectangle
+		(start 190.754 98.044)
+		(end 195.834 104.394)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "727bac82-4e42-4113-87a8-201295383626")
+	)
+	(rectangle
+		(start 190.754 65.024)
+		(end 195.834 71.374)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a3a8c3d5-2cc0-411e-811a-142bee29b210")
+	)
+	(rectangle
+		(start 136.398 53.34)
+		(end 183.388 116.84)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a50b3b40-8bf9-4e97-b7cf-09dda6aeee72")
+	)
+	(rectangle
+		(start 83.82 87.376)
+		(end 93.98 108.966)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b199a681-1380-461f-a7bd-45c7c6b5f2df")
+	)
+	(rectangle
+		(start 83.82 61.976)
+		(end 93.98 83.566)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b1a6c8db-019b-432c-b906-d980706ef750")
+	)
+	(rectangle
+		(start 86.36 111.76)
+		(end 92.71 116.84)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b5b9ec4a-5fc3-45b9-a276-122375de445c")
+	)
+	(rectangle
+		(start 189.23 113.03)
+		(end 195.58 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bc8a6e88-91b0-4ea5-b915-f1f52d27a7b6")
+	)
+	(rectangle
+		(start 83.82 50.8)
+		(end 198.12 120.65)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c3ed6c93-6c9f-4f4b-b145-10a1c680bba9")
+	)
+	(rectangle
+		(start 140.208 57.15)
+		(end 180.848 113.03)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d61b7a70-59a7-4125-b4e8-90d2a1b6f5f4")
+	)
+	(rectangle
+		(start 190.754 76.454)
+		(end 195.834 82.804)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "eed87332-d238-44a2-a4a5-9654ccf7abc5")
+	)
+	(text "-POUT"
+		(exclude_from_sim no)
+		(at 187.706 69.342 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "10792985-9da6-4127-bfe6-ce982097f3ab")
+	)
+	(text "HEAT SINK"
+		(exclude_from_sim no)
+		(at 138.684 91.948 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "13fe8361-be78-412e-bea4-30dfe1185a3f")
+	)
+	(text "MH\n"
+		(exclude_from_sim no)
+		(at 192.024 56.388 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "17baa703-6a54-43e4-b05a-39bfc4a56ff7")
+	)
+	(text "USB-A"
+		(exclude_from_sim no)
+		(at 88.9 99.06 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2cc1beab-3b34-4b7a-8325-d4993e6681e1")
+	)
+	(text "USB-C\n"
+		(exclude_from_sim no)
+		(at 88.9 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "3960fed4-ad4a-4ca3-95b6-0638e407fead")
+	)
+	(text "MH\n"
+		(exclude_from_sim no)
+		(at 192.024 115.824 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4709f97b-882b-4590-a55d-df972528901f")
+	)
+	(text "CIRCUITRY"
+		(exclude_from_sim no)
+		(at 121.412 88.138 90)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "6e5278ec-e9a8-4105-9439-6133626f98f8")
+	)
+	(text "+BOUT"
+		(exclude_from_sim no)
+		(at 187.706 91.694 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "8f0aa646-cee7-499c-8de5-08f8a3fc6196")
+	)
+	(text "BATTERY"
+		(exclude_from_sim no)
+		(at 160.02 85.09 90)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 0.625)
+			)
+		)
+		(uuid "bf33f5c1-9dca-4ac4-8c23-ba319cfab03b")
+	)
+	(text "-BOUT"
+		(exclude_from_sim no)
+		(at 187.96 81.026 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "bf972118-64a4-4835-b546-e6bd407d3536")
+	)
+	(text "-BAT"
+		(exclude_from_sim no)
+		(at 121.92 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "caa915a2-003d-4e63-b999-e68a5afb6bde")
+	)
+	(text "Battery is connected to electrically active plates +BAT and -BAT\nHeat sink is placed below battery \nMH refers to the mounting holes"
+		(exclude_from_sim no)
+		(at 84.836 44.958 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "d05acccd-f89f-4423-a2e2-19423c34a6cb")
+	)
+	(text "+BAT"
+		(exclude_from_sim no)
+		(at 110.744 54.864 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "e320d8ba-fa79-4213-b6e0-c66e7b78dbc2")
+	)
+	(text "MH\n"
+		(exclude_from_sim no)
+		(at 89.408 114.808 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "e7c48469-e7a3-4656-8dee-163b9fa0462a")
+	)
+	(text "+POUT"
+		(exclude_from_sim no)
+		(at 187.96 102.87 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "ed7a0119-b482-4ed9-8a2b-baf6ded13e20")
+	)
+	(text "MH\n"
+		(exclude_from_sim no)
+		(at 90.424 57.658 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "fc1973ea-163d-47c4-9f29-7c60e23ad8ff")
+	)
+)
