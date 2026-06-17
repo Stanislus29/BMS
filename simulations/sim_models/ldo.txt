@@ -1,0 +1,42 @@
+* Behavioral LDO with EN + FB (ngspice-safe)
+
+.subckt LDO IN OUT GND EN FB
+
+.param VREF=1.0
+.param VOUT_NOM=3.3
+.param RPASS=0.2
+.param ROFF=1e9
+
+* -----------------------------
+* 1. Enable-controlled pass behavior
+* -----------------------------
+* EN high → normal operation
+* EN low  → output disconnected (high impedance)
+
+BCTRL NCTRL GND v = { V(EN,GND) }
+
+* smooth enable weighting (avoids discontinuities)
+BWEIGHT NW GND v = { limit(V(NCTRL,GND), 0, 1) }
+
+* effective pass resistance
+RPATH IN N1 { RPASS/(V(NW,GND)+1e-9) + ROFF*(1-V(NW,GND)) }
+
+* -----------------------------
+* 2. Feedback regulation loop (simple error amplifier)
+* -----------------------------
+BERR NERR GND v = { V(FB,GND) - VREF }
+
+* gain stage (sets regulation strength)
+BGAIN N2 GND v = { V(IN,GND) - 10*V(NERR,GND) }
+
+* -----------------------------
+* 3. Output stage (clamped regulator behavior)
+* -----------------------------
+BOUT OUT GND v = { limit(V(N2,GND), 0, V(IN,GND)) }
+
+* -----------------------------
+* 4. Feedback pin just senses output
+* -----------------------------
+RFB OUT FB 1Meg
+
+.ends LDO

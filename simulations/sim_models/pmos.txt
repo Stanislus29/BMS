@@ -1,0 +1,8 @@
+.subckt PMOS D G S
+
+.param Vth=2
+.param K=0.5
+
+Bmos D S I = { K*max(V(S,G)-Vth,0)^2 }
+
+.ends PMOS

@@ -1,0 +1,18 @@
+* SS14 Schottky Diode SPICE Model (tuned to datasheet)
+* Target: VF ≈ 0.5V @ IF = 1A, IR ≈ 0.2mA @ 25°C, VRRM = 40V
+
+.model SS14 D (
++ IS=200u        ; Saturation current → sets leakage (~0.2 mA scale)
++ N=1.1        ; Schottky ideality (close to 1, tuned for VF curve)
+
++ RS=0.08       ; Series resistance → helps land ~0.5V at 1A
+
++ BV=40          ; Reverse breakdown voltage (VRRM)
++ IBV=1m         ; Current at breakdown knee
+
++ CJO=120p       ; Junction capacitance (typical for SS14 class)
++ VJ=0.3         ; Schottky barrier potential
++ M=0.33         ; Junction grading
+
++ TT=5n          ; Fast switching (Schottky behavior)
+)

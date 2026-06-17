@@ -1,14 +1,6 @@
 {
   "board": {
     "3dviewports": [],
-    "design_settings": {
-      "defaults": {},
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
-      "rules": {},
-      "track_widths": [],
-      "via_dimensions": []
-    },
     "ipc2581": {
       "bom_rev": "",
       "dist": "",
@@ -225,7 +217,6 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -265,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Bat_mgt_sys_v2.kicad_pro",
+    "filename": "sim-OC-SUBCKT.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -299,14 +290,10 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -417,41 +404,33 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "KiCad",
     "ngspice": {
       "fix_include_paths": true,
       "meta": {
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "Bat_mgt_sys_v2.wbk"
+      "workbook_filename": "sim-OC-SUBCKT.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
-    "space_save_all_events": true,
-    "spice_current_sheet_as_root": false,
-    "spice_external_command": "spice \"%I\"",
-    "spice_model_current_sheet_as_root": true,
-    "spice_save_all_currents": false,
-    "spice_save_all_dissipations": false,
-    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Bat_mgt_sys_v2.kicad_sch",
-        "name": "Bat_mgt_sys_v2",
-        "uuid": "f0e4e725-dbb4-4f63-808d-92393ab96227"
+        "filename": "sim-OC-SUBCKT.kicad_sch",
+        "name": "Root",
+        "uuid": "20eb0d9b-df4c-421e-884b-ad1d01d2ef62"
       }
     ],
-    "used_designators": "Q2-3,D7,C4,BT2",
+    "used_designators": "U1,U5-6,V2,R24",
     "variants": []
   },
   "sheets": [
     [
-      "f0e4e725-dbb4-4f63-808d-92393ab96227",
-      "Bat_mgt_sys_v2"
+      "20eb0d9b-df4c-421e-884b-ad1d01d2ef62",
+      "Root"
     ]
   ],
   "text_variables": {},

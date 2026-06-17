@@ -984,6 +984,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2539,15 +2740,15 @@
 		)
 		(uuid "6962244d-3dcf-44e1-8757-b1355b8ef972")
 	)
-	(text ".tran 5u 80m \r\n.options maxstep=100n\r\n.options method=gear\r\n.options reltol=1e-3 abstol=1e-9 vabstol=1e-6\r\n.options gmin=1e-9\r\n.options itl1=200 itl4=200"
+	(text ".tran 5u 80m\n.options maxstep = 100n\n.options method = gear\n.options reltol = 1e-3 abstol = 1e-9 vasbtol=1e-6\n.options gmin = 1e-9\n.options itl=200 itl4=200"
 		(exclude_from_sim no)
-		(at 370.078 67.056 0)
+		(at 373.634 45.466 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "8c7c6910-b377-4762-ba0c-a8eff80641ec")
+		(uuid "87bfb118-41e7-4262-b76d-ae577a491f40")
 	)
 	(text "OVERCHARGE PROTECTION"
 		(exclude_from_sim no)
@@ -2606,6 +2807,12 @@
 		(uuid "09595e4f-4e24-49c3-94be-75e33af9d1ea")
 	)
 	(junction
+		(at 359.41 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1164aa1e-04a1-4b05-94eb-495ee7ee14d2")
+	)
+	(junction
 		(at 212.09 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2624,6 +2831,12 @@
 		(uuid "2fa5e454-bf1e-47be-8777-513312b23c1e")
 	)
 	(junction
+		(at 314.96 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "362778f2-f874-4f0c-9ae7-3a8209bdef78")
+	)
+	(junction
 		(at 90.17 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2640,6 +2853,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d61ccb6-964a-4778-a72e-92116bbf25f2")
+	)
+	(junction
+		(at 312.42 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f95e3e0-c95d-4b22-a266-3212245558ce")
 	)
 	(junction
 		(at 262.89 162.56)
@@ -2847,6 +3066,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 182.88) (xy 312.42 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24fdfc9f-9342-4fe9-9e8f-1992a4ac78a0")
+	)
+	(wire
+		(pts
 			(xy 212.09 110.49) (xy 248.92 110.49)
 		)
 		(stroke
@@ -2947,6 +3176,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 168.91) (xy 312.42 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f121053-916a-4ed6-bcc6-acaa29673625")
+	)
+	(wire
+		(pts
 			(xy 114.3 119.38) (xy 121.92 119.38)
 		)
 		(stroke
@@ -2977,7 +3216,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 148.59) (xy 379.73 148.59)
+			(xy 359.41 148.59) (xy 379.73 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3007,6 +3246,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 105.41) (xy 314.96 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c61af6b-44a2-4a27-a3bf-6677435d87c0")
+	)
+	(wire
+		(pts
 			(xy 170.18 55.88) (xy 170.18 57.15)
 		)
 		(stroke
@@ -3014,6 +3263,16 @@
 			(type default)
 		)
 		(uuid "4e102457-99cd-46cc-9c8a-2a78c1a88226")
+	)
+	(wire
+		(pts
+			(xy 314.96 97.79) (xy 314.96 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52f577b3-94e8-4b3e-9a5d-c7364b1049a9")
 	)
 	(wire
 		(pts
@@ -3094,6 +3353,16 @@
 			(type default)
 		)
 		(uuid "68e68f8e-4099-453e-b405-e98502d7a7f8")
+	)
+	(wire
+		(pts
+			(xy 359.41 172.72) (xy 359.41 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "700d18e7-3d68-401b-bb90-14edf12976c6")
 	)
 	(wire
 		(pts
@@ -3227,7 +3496,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 168.91) (xy 314.96 168.91)
+			(xy 304.8 168.91) (xy 312.42 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3257,6 +3526,16 @@
 	)
 	(wire
 		(pts
+			(xy 354.33 148.59) (xy 359.41 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d3f07b9-6a32-4ef0-91d2-2e817d2a3c06")
+	)
+	(wire
+		(pts
 			(xy 283.21 162.56) (xy 283.21 166.37)
 		)
 		(stroke
@@ -3274,6 +3553,16 @@
 			(type default)
 		)
 		(uuid "9bc7a372-8b73-4363-8407-38ea080c4b62")
+	)
+	(wire
+		(pts
+			(xy 312.42 193.04) (xy 312.42 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d9ce2fd-76c3-401b-9217-aae630179cee")
 	)
 	(wire
 		(pts
@@ -3314,6 +3603,16 @@
 			(type default)
 		)
 		(uuid "ae8ddf9d-6bb5-42cb-89cb-843a2fc70d08")
+	)
+	(wire
+		(pts
+			(xy 359.41 163.83) (xy 359.41 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3ab5988-772c-4de2-a4d2-9d41c4cd8cc9")
 	)
 	(wire
 		(pts
@@ -3447,6 +3746,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 168.91) (xy 312.42 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3c2a983-ba62-482b-821d-e5900eedbb06")
+	)
+	(wire
+		(pts
 			(xy 203.2 48.26) (xy 212.09 48.26)
 		)
 		(stroke
@@ -3454,6 +3763,16 @@
 			(type default)
 		)
 		(uuid "d4ee3255-a0c0-4de6-bc4b-6db1e6bae07a")
+	)
+	(wire
+		(pts
+			(xy 314.96 86.36) (xy 314.96 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4ff5b4a-8867-45d3-be82-71c9f09b7b03")
 	)
 	(wire
 		(pts
@@ -3524,6 +3843,16 @@
 			(type default)
 		)
 		(uuid "e343b5d0-5183-465c-83d6-71110b92affe")
+	)
+	(wire
+		(pts
+			(xy 359.41 148.59) (xy 359.41 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e38c5e62-9dd2-4d99-bba9-9cf9df681108")
 	)
 	(wire
 		(pts
@@ -3724,6 +4053,16 @@
 			(justify left bottom)
 		)
 		(uuid "661fdc85-e7c1-4c7e-8425-68b7abcd1048")
+	)
+	(label "LDO_IN"
+		(at 359.41 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fa48f5d-b67c-4f53-a457-7f44199b68c9")
 	)
 	(label "BOUT"
 		(at 152.4 119.38 0)
@@ -4846,6 +5185,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 314.96 101.6 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "35b1ef85-c1d4-49d1-a8e7-fe97121e2989")
+		(property "Reference" "R21"
+			(at 313.182 101.346 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.45k"
+			(at 317.246 101.092 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 313.944 101.346 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 314.96 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fd6d16df-a73a-4709-8cd3-1ad2b2fc3b62")
+		)
+		(pin "1"
+			(uuid "e045b0cb-9c28-4f14-90fc-a1d633aea4ab")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 142.24 184.15 0)
 		(unit 1)
@@ -5133,6 +5551,86 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 312.42 179.07 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3b571fbe-b207-429e-b27f-dc4fe641b752")
+		(property "Reference" "R22"
+			(at 310.642 179.324 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.6k"
+			(at 314.706 179.578 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 311.404 179.324 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 312.42 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c856c7dc-63f3-4782-99f7-faad87a27924")
+		)
+		(pin "1"
+			(uuid "746e93dc-8fc2-4bf1-8ed2-b679fbabf13a")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 276.86 96.52 90)
 		(unit 1)
 		(body_style 1)
@@ -5284,6 +5782,241 @@
 			(project "Bat_mgt_sys_v2"
 				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 359.41 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d3fab33-9502-4891-b99a-8a53f54c5704")
+		(property "Reference" "#PWR022"
+			(at 359.41 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 359.41 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 359.41 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de9f2514-65f3-4cf5-baff-f19acf235cea")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 312.42 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d50aade-b3ac-406d-8797-3125f6d3b17e")
+		(property "Reference" "#PWR020"
+			(at 312.42 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 312.42 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 312.42 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bd5b60e-b9f7-4c1f-9119-068d339151be")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 314.96 80.01 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e1c4037-1a09-4609-b4e1-175bb76214e3")
+		(property "Reference" "#PWR019"
+			(at 314.96 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 314.96 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 314.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e05adbc2-cfbe-430f-9b98-43292d80df46")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6112,6 +6845,258 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 314.96 90.17 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8461087c-d247-41f5-a99f-7ed3c83a043b")
+		(property "Reference" "D4"
+			(at 317.5 87.3124 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 317.5 89.8524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "C:\\Users\\DELL\\Downloads\\Greenled.lib"
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "DLED_G"
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 314.96 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5f3b44c0-3882-466c-86b2-b2b31d0d6a3a")
+		)
+		(pin "1"
+			(uuid "62e0cb79-c28b-478a-b3b2-c77245a88482")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 359.41 168.91 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "854f0554-8215-4be0-96e8-ddbf36d3b70f")
+		(property "Reference" "D6"
+			(at 363.22 169.2274 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "WHITE"
+			(at 363.22 171.7674 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "C:\\Users\\DELL\\Downloads\\WhiteLed.lib"
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "DLED_W"
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 359.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a5986b79-3b8f-4809-b478-86ae097d24da")
+		)
+		(pin "1"
+			(uuid "190a546e-f0aa-4f07-8cfb-2d9f993a2522")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 161.29 132.08 0)
 		(unit 1)
@@ -6265,7 +7250,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=drain 2=gate 3=source"
+		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 57.15 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -6276,7 +7261,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/OptiMOS_p.lib"
+		(property "Sim.Library" "sim_models/pmos.txt"
 			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -6287,7 +7272,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BSS215P_L1"
+		(property "Sim.Name" "PMOS"
 			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -6389,6 +7374,132 @@
 			(project "Bat_mgt_sys_v2"
 				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 312.42 189.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f497c2d-0c25-436d-9ae9-ab33a7e2fbd5")
+		(property "Reference" "D5"
+			(at 316.23 189.5474 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 316.23 192.0874 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "C:\\Users\\DELL\\Downloads\\red2.lib"
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "DLED_R"
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 312.42 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7beb6843-7310-47c7-8d3c-1aacad60862c")
+		)
+		(pin "1"
+			(uuid "862c6906-6c47-4273-9298-2c7cea6aa1a1")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6634,6 +7745,133 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 132.08 173.99 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2ff06fe-e448-49cb-8cbe-e94d249b289e")
+		(property "Reference" "Q3"
+			(at 132.08 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMOS"
+			(at 132.08 182.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 119.38 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 114.935 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 116.84 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim_models/pmos.txt"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "PMOS"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "de4b211b-711b-46a0-b0b3-228a5ba10fe4")
+		)
+		(pin "2"
+			(uuid "281b800b-82da-4322-b488-d0a63dbd5b8f")
+		)
+		(pin "1"
+			(uuid "38e34ac8-2ff2-4827-a21f-157a222c1c76")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xGxx:74AHC1G02")
 		(at 341.63 148.59 0)
 		(unit 1)
@@ -6761,133 +7999,6 @@
 			(project "Bat_mgt_sys_v2"
 				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 132.08 173.99 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a45202d6-0762-4c16-bb13-99a09f9a03fe")
-		(property "Reference" "Q2"
-			(at 132.08 180.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 132.08 182.88 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 119.38 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 132.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 114.935 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=drain 2=gate 3=source"
-			(at 116.84 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/OptiMOS_p.lib"
-			(at 132.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BSS215P_L1"
-			(at 132.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7c5120a0-bd79-4617-a07e-6c96106db0d3")
-		)
-		(pin "2"
-			(uuid "fbb87c65-7e46-44d9-a3e0-c5c48c7957a1")
-		)
-		(pin "1"
-			(uuid "1f2f2e00-f9a1-4a5a-8132-7d0f1934d535")
-		)
-		(instances
-			(project "Bat_mgt_sys_v2"
-				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7329,6 +8440,86 @@
 			(project "Bat_mgt_sys_v2"
 				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 359.41 160.02 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7205e63-00d9-4670-ae6b-26d288862580")
+		(property "Reference" "R23"
+			(at 357.632 160.274 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "370"
+			(at 361.696 160.528 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 358.394 160.274 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 359.41 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "22ad2c8f-0021-41c8-8786-c1ab9584969a")
+		)
+		(pin "1"
+			(uuid "092e017c-2c0e-40f2-8fbf-c9d12f4b9104")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "R23")
 					(unit 1)
 				)
 			)
