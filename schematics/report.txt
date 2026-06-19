@@ -1,0 +1,95 @@
+Info: Processing symbol 'R5:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R15:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R14:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R13:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R12:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R11:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R9:Resistor_SMD:R_2512_6332Metric'.
+Info: Processing symbol 'R8:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R7:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R6:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R16:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R4:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R3:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R2:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'Q2:Package_TO_SOT_SMD:SOT-23'.
+Info: Processing symbol 'Q1:Package_TO_SOT_SMD:SOT-23'.
+Info: Processing symbol 'J2:bmslibs:GCT_USB1046-GF-0190-L-B-A_REVB4'.
+Info: Processing symbol 'J1:bmslibs:MOLEX_2171750001'.
+Info: Processing symbol 'HS1:bmslibs:SOT95P280X140-5N'.
+Info: Processing symbol 'R26:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'U8:bmslibs:SOT95P280X140-5N'.
+Info: Processing symbol 'U6:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U5:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U4:Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias'.
+Info: Processing symbol 'U3:Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias'.
+Info: Processing symbol 'U2:Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm'.
+Info: Processing symbol 'U1:Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm'.
+Info: Processing symbol 'Thermistor(NXRT15XV103FA3A016)1:bmslibs:THROUGH_HOLES'.
+Info: Processing symbol 'R27:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'BT2:Battery:BatteryHolder_Keystone_3034_1x20mm'.
+Info: Processing symbol 'R25:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R24:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R23:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R22:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R21:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R20:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R19:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R18:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R17:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'D3:Diode_SMD:D_SMA'.
+Info: Processing symbol 'C10:Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal'.
+Info: Processing symbol 'D1:Diode_SMD:D_SMA'.
+Info: Processing symbol 'D2:Diode_SMD:D_SMA'.
+Info: Processing symbol 'C9:Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'D4:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:CP_Elec_6.3x5.4'.
+Info: Processing symbol 'C4:Capacitor_SMD:CP_Elec_6.3x5.4'.
+Info: Processing symbol 'D6:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'BT1:bmslibs:THROUGH_HOLES'.
+Info: Processing symbol 'C1:Capacitor_SMD:CP_Elec_6.3x5.4'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C3:Capacitor_SMD:CP_Elec_6.3x5.4'.
+Info: Processing symbol 'D5:LED_THT:LED_D3.0mm'.
+Info: Processing symbol 'C5:Capacitor_SMD:CP_Elec_6.3x5.4'.
+Added C9 (footprint 'Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal').
+Changed REF** reference designator to C9.
+Changed C9 value from CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal to 22.
+Updated C9 symbol association from  to /f29ec8de-e330-4a5a-824f-d43cd5d6dac9.
+Updated C9 fields.
+Updated C9 sheetname to '/'.
+Updated C9 sheetfile to 'Bat Mgt Sys.kicad_sch'.
+Updated C9 footprint filters to 'CP_*'.
+Connected C9 pin 1 to +BOUT.
+Connected C9 pin 2 to GND.
+Updated C9 unit metadata.
+Added C10 (footprint 'Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal').
+Changed REF** reference designator to C10.
+Changed C10 value from CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal to 22.
+Updated C10 symbol association from  to /4ef05bd2-7f7a-4d84-969a-0c6d4796e7ea.
+Updated C10 fields.
+Updated C10 sheetname to '/'.
+Updated C10 sheetfile to 'Bat Mgt Sys.kicad_sch'.
+Updated C10 footprint filters to 'CP_*'.
+Connected C10 pin 1 to +POUT.
+Connected C10 pin 2 to GND.
+Updated C10 unit metadata.
+Warning: No net found for component HS1 pad 1 (no pin 1 in symbol).
+Warning: No net found for component J2 pad SH2 (no pin SH2 in symbol).
+Warning: No net found for component J2 pad SH1 (no pin SH1 in symbol).
+Warning: No net found for component J1 pad SH1 (no pin SH1 in symbol).
+Warning: No net found for component J1 pad SH4 (no pin SH4 in symbol).
+Warning: No net found for component J1 pad SH3 (no pin SH3 in symbol).
+Warning: No net found for component J1 pad SH2 (no pin SH2 in symbol).
+Warning: No net found for component HS1 pad 4 (no pin 4 in symbol).
+Warning: No net found for component HS1 pad 5 (no pin 5 in symbol).
+Warning: No net found for component HS1 pad 2 (no pin 2 in symbol).
+Warning: No net found for component HS1 pad 3 (no pin 3 in symbol).
+Error: J1 pad S1 not found in bmslibs:MOLEX_2171750001.
+Error: J2 pad 5 not found in bmslibs:GCT_USB1046-GF-0190-L-B-A_REVB4.
+
+
+Info: Total warnings: 11, errors: 2.
