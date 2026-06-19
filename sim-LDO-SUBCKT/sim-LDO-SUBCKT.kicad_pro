@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "sim-OC-SUBCKT.kicad_pro",
+    "filename": "sim-LDO-SUBCKT.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -410,7 +410,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "sim-OC-SUBCKT.wbk"
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -419,17 +419,17 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "sim-OC-SUBCKT.kicad_sch",
+        "filename": "sim-LDO-SUBCKT.kicad_sch",
         "name": "Root",
-        "uuid": "20eb0d9b-df4c-421e-884b-ad1d01d2ef62"
+        "uuid": "d4bc50a2-e541-43a2-bfb4-d9a873a3012e"
       }
     ],
-    "used_designators": "TH1",
+    "used_designators": "V2,#PWR4",
     "variants": []
   },
   "sheets": [
     [
-      "20eb0d9b-df4c-421e-884b-ad1d01d2ef62",
+      "d4bc50a2-e541-43a2-bfb4-d9a873a3012e",
       "Root"
     ]
   ],

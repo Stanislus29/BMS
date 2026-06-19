@@ -33,8 +33,8 @@
         },
         {
           "color": "rgb(55, 126, 184)",
-          "cursor1": {
-            "position": 0.0729539295392954,
+          "cursor2": {
+            "position": 0.04795698924731183,
             "x_format": "3~s",
             "y_format": "3~V"
           },
@@ -46,14 +46,9 @@
           "trace_type": 257
         },
         {
-          "color": "rgb(255, 255, 51)",
-          "signal": "V(/V_REF+)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(166, 86, 40)",
-          "cursor2": {
-            "position": 0.04802168021680217,
+          "color": "rgb(77, 175, 74)",
+          "cursor1": {
+            "position": 0.02580645161290323,
             "x_format": "3~s",
             "y_format": "3~V"
           },
@@ -61,7 +56,17 @@
             "x_format": "3~s",
             "y_format": "3~V"
           },
-          "signal": "V(/V_REF-)",
+          "signal": "V(/TH_OUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(152, 78, 163)",
+          "signal": "V(/VTH_REF+)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(255, 127, 0)",
+          "signal": "V(/VTH_REF-)",
           "trace_type": 257
         }
       ]

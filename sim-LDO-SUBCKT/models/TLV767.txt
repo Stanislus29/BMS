@@ -1,0 +1,29 @@
+* KiCad ngspice Fully-Compatible 5-Pin LDO (0.8V VREF)
+* Node Order: IN OUT GND EN FB
+
+.SUBCKT TLV767 IN OUT GND EN FB
+
+* --- 1. Enable Pin Control Logic ---
+R_EN     EN  GND 100k
+S_EN     INT_VREF GND EN GND SW_EN 
+.MODEL   SW_EN SW(vt=1.0 vh=0.2 ron=0.01 roff=1Meg)
+R_PULL   INT_VREF GND 1Meg
+
+* --- 2. Internal Reference (0.8V) ---
+V_REF    INT_REF_SRC GND DC 0.8
+
+* --- 3. Robust Error Amplifier (Native ngspice VCVS) ---
+* This acts as an op-amp comparing INT_VREF (+) to FB (-).
+* Gain is set to 1000. Output goes to the internal GATE node.
+E_AMP    IN GATE INT_VREF FB 1000
+
+* --- 4. PMOS Pass Transistor ---
+* Driven directly by the GATE node relative to IN.
+M_PASS   OUT GATE IN IN PMOS_LDO
+.MODEL   PMOS_LDO PMOS (VTO=-1.0 KP=20 CGS=10p CGD=10p)
+
+* --- 5. Quiescent Current & Stabilizing Capacitance ---
+R_IQ     IN GND 50k
+C_OUT    OUT GND 1p
+
+.ENDS TLV767

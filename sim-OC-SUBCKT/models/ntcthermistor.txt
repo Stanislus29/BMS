@@ -1,0 +1,26 @@
+* 2-Pin Dynamic NTC Thermistor (Beta Formula over Time)
+* Pins: 1 and 2
+.SUBCKT ntc_2pin 1 2
+
+* --- 1. Standard Thermistor Datasheet Constants ---
+.param R25 = 10k            ; Resistance at 25°C
+.param BETA = 3950          ; Beta coefficient 
+.param T0 = 298.15          ; Reference Room Temp in Kelvin (25°C)
+
+* --- 2. Generic Simulation Environment Profile (Adjust as needed) ---
+.param T_START_C = 25       ; What temperature you want the simulation to START at (°C)
+.param T_END_C = 100        ; What temperature you want the simulation to END at (°C)
+.param T_RAMP_TIME = 0.08   ; How long the heat ramp lasts (0.08 = 80ms to match your .tran)
+
+* --- 3. Mathematical Conversions ---
+.param T_START_K = {T_START_C + 273.15}
+.param T_END_K = {T_END_C + 273.15}
+
+* --- 4. Core Engine ---
+* This calculates a dynamic temperature based on SPICE 'time'. 
+* If 'time' passes T_RAMP_TIME, it holds the temperature flat at T_END_K.
+* It then runs that temperature through your Beta exponential formula.
+
+G_THERM 1 2 VALUE={ V(1,2) / ( R25 * exp( BETA * ( 1 / (time < T_RAMP_TIME ? T_START_K + (T_END_K - T_START_K)*time/T_RAMP_TIME : T_END_K) - 1/T0 ) ) ) }
+
+.ENDS ntc_2pin
