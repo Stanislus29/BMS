@@ -2740,7 +2740,7 @@
 		)
 		(uuid "6962244d-3dcf-44e1-8757-b1355b8ef972")
 	)
-	(text ".tran 5u 80m\n.options maxstep = 100n\n.options method = gear\n.options reltol = 1e-3 abstol = 1e-9 vasbtol=1e-6\n.options gmin = 1e-9\n.options itl=200 itl4=200"
+	(text ".tran 5u 150m\n.options maxstep = 100n\n.options method = gear\n.options reltol = 1e-3 abstol = 1e-9 vasbtol=1e-6\n.options gmin = 1e-9\n.options itl=200 itl4=200"
 		(exclude_from_sim no)
 		(at 373.634 45.466 0)
 		(effects
@@ -3056,6 +3056,16 @@
 	)
 	(wire
 		(pts
+			(xy 285.75 153.67) (xy 304.8 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cb69e48-ce3a-4d22-9ba9-70d2f96ba2a6")
+	)
+	(wire
+		(pts
 			(xy 143.51 163.83) (xy 132.08 163.83)
 		)
 		(stroke
@@ -3133,16 +3143,6 @@
 			(type default)
 		)
 		(uuid "39f8c295-59e4-415a-9a91-88a36b38bd6a")
-	)
-	(wire
-		(pts
-			(xy 285.75 153.67) (xy 304.8 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b2cdcd5-f9dc-4ac5-8427-4d7d936059a8")
 	)
 	(wire
 		(pts
@@ -5052,139 +5052,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:MCP6561-OT")
-		(at 290.83 168.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "327bb8a6-053d-4cdb-9d56-96830873eeed")
-		(property "Reference" "U3"
-			(at 303.53 162.4898 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6561-OT"
-			(at 303.53 165.0298 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 288.29 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6561-1R-1U-2-4-1.8V-Low-Power-Push-Pull-Output-Comparator-DS20002139E.pdf"
-			(at 290.83 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single 1.8V Low-Power Push-Pull Output Comparator, SOT-23-5"
-			(at 290.83 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/MCP6561.txt"
-			(at 290.83 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "MCP6561"
-			(at 290.83 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 290.83 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=5 2=4 3=1 4=2 5=3"
-			(at 290.83 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "e0b18451-5d0a-4deb-bfec-930c41d362e3")
-		)
-		(pin "1"
-			(uuid "c426a0b9-8149-40b2-a259-c9bef9b294c9")
-		)
-		(pin "3"
-			(uuid "5a4c507b-6460-49b0-89c7-85b7a571d53f")
-		)
-		(pin "4"
-			(uuid "ea451885-cf64-488f-b538-646e5cb88296")
-		)
-		(pin "2"
-			(uuid "37705df7-4c6a-418f-b18a-d20ad8e17d98")
-		)
-		(instances
-			(project "Bat_mgt_sys_v2"
-				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 314.96 101.6 180)
 		(unit 1)
@@ -5709,6 +5576,133 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 132.08 173.99 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46d0c47a-9636-47ea-8fb7-1741cdc70012")
+		(property "Reference" "Q2"
+			(at 132.08 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMOS"
+			(at 132.08 182.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 119.38 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-PP-MGT/models/BSS215P_L1.lib"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BSS215P_L1"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=drain 2=gate 3=source"
+			(at 132.08 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "7a1ecbbe-1bfe-4226-8679-ddbc4036ab79")
+		)
+		(pin "2"
+			(uuid "765e0fe5-3200-42f8-8728-c9c3897c9644")
+		)
+		(pin "1"
+			(uuid "6eb8533b-e785-46bf-ba61-3ec8b9553a1f")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 161.29 123.19 0)
 		(unit 1)
@@ -6023,6 +6017,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Comparator:MCP6561-OT")
+		(at 290.83 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5a108ae8-f8e9-417a-b040-1511f486b3c2")
+		(property "Reference" "U5"
+			(at 303.53 162.4898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6561-OT"
+			(at 303.53 165.0298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 288.29 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP6561-1R-1U-2-4-1.8V-Low-Power-Push-Pull-Output-Comparator-DS20002139E.pdf"
+			(at 290.83 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single 1.8V Low-Power Push-Pull Output Comparator, SOT-23-5"
+			(at 290.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-OC-SUBCKT/models/MCP6561.txt"
+			(at 290.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "MCP6561"
+			(at 290.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 290.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=5 2=4 3=1 4=2 5=3"
+			(at 290.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "947b0e3f-8bfd-4d53-a230-ebae37a5872a")
+		)
+		(pin "1"
+			(uuid "ac17a060-ef99-4a4b-b9cf-1e23f32f1549")
+		)
+		(pin "3"
+			(uuid "7373aaad-af57-4aaf-86b9-bb4716df0eda")
+		)
+		(pin "4"
+			(uuid "c987c6a1-bc44-4472-afd1-afc9aaa3ab15")
+		)
+		(pin "2"
+			(uuid "76ca1db9-c6cc-4b97-9552-f736696adfff")
+		)
+		(instances
+			(project "Bat_mgt_sys_v2"
+				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 130.81 63.5 0)
 		(unit 1)
@@ -6272,7 +6399,7 @@
 				(justify left)
 			)
 		)
-		(property "Sim.Params" "pwl=\"0 3.0 20n 3.3 50n 3.7 70n 4.0\""
+		(property "Sim.Params" "PWL(0 4.2 20m 3.7 40m 3.5 60m 3.0)"
 			(at 169.164 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6531,7 +6658,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/TLV76701_TRANS.lib"
+		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-LDO-SUBCKT/models/TLV76701P_ngspice.lib"
 			(at 153.67 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7239,29 +7366,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" "SUBCKT"
-			(at 55.245 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 57.15 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim_models/pmos.txt"
+		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-PP-MGT/models/BSS215P_L1.lib"
 			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -7272,7 +7377,29 @@
 				)
 			)
 		)
-		(property "Sim.Name" "PMOS"
+		(property "Sim.Name" "BSS215P_L1"
+			(at 72.39 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 72.39 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=drain 2=gate 3=source"
 			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -7686,7 +7813,7 @@
 				)
 			)
 		)
-		(property "Value" "3.6k"
+		(property "Value" "2.8k"
 			(at 149.352 161.544 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7739,133 +7866,6 @@
 			(project "Bat_mgt_sys_v2"
 				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 132.08 173.99 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a2ff06fe-e448-49cb-8cbe-e94d249b289e")
-		(property "Reference" "Q3"
-			(at 132.08 180.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 132.08 182.88 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 119.38 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 132.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 114.935 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 116.84 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim_models/pmos.txt"
-			(at 132.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "PMOS"
-			(at 132.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "de4b211b-711b-46a0-b0b3-228a5ba10fe4")
-		)
-		(pin "2"
-			(uuid "281b800b-82da-4322-b488-d0a63dbd5b8f")
-		)
-		(pin "1"
-			(uuid "38e34ac8-2ff2-4827-a21f-157a222c1c76")
-		)
-		(instances
-			(project "Bat_mgt_sys_v2"
-				(path "/f0e4e725-dbb4-4f63-808d-92393ab96227"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7936,7 +7936,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/SN74AHC1G02.cir"
+		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-OC-SUBCKT/models/NORGATE.txt"
 			(at 341.63 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7969,7 +7969,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=A 2=B 3=AGND 4=Y 5=VCC"
+		(property "Sim.Pins" "1=A 2=B 3=GND 4=Y 5=VCC"
 			(at 341.63 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9105,7 +9105,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5"
+		(property "Value" "0"
 			(at 203.2 228.4701 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9498,7 +9498,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/MCP6561.txt"
+		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-OC-SUBCKT/models/MCP6561.txt"
 			(at 285.75 113.03 0)
 			(hide yes)
 			(show_name no)

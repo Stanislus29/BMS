@@ -410,7 +410,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": ""
+      "workbook_filename": "sim-LDO-SUBCKT.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -424,7 +424,7 @@
         "uuid": "d4bc50a2-e541-43a2-bfb4-d9a873a3012e"
       }
     ],
-    "used_designators": "V2,#PWR4",
+    "used_designators": "BT1,#PWR6,V2",
     "variants": []
   },
   "sheets": [

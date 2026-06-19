@@ -1,0 +1,60 @@
+*$
+* BSS215P - ngspice compatible model
+* Simplified from Infineon PSpice Level-1/3 library
+* P-channel MOSFET, -30V, 150mOhm, SOT-23
+*
+* Pins: drain gate source
+*
+* Simplifications vs original:
+*   1. Level-3 P3_20var core replaced with standard PMOS LEVEL=3
+*   2. TC= removed from all resistors
+*   3. Thermal network removed (Tj pinned to TEMP)
+*   4. Package parasitics kept (Lg, Ld, Ls, Rs, Rg)
+*   5. Body diode kept
+*   6. Nonlinear Cgd (DGD model) kept
+*   7. VALUE={} expressions use ternary, single-line
+*
+*****************************************************************************
+
+.SUBCKT BSS215P_L1 drain gate source PARAMS: dVth=0 dRdson=0 dgfs=0 dC=0
+
+* Package parasitics
+Lg    gate   g1   1n
+Ld    drain  d1   0.5n
+Ls    source s1   1n
+Rs    s1     s2   15.379m
+Rg    g1     g2   17.5
+
+* Core MOSFET (PMOS LEVEL=3, parameters from L0 model)
+M1    d2  g2  s2  s2  DMOS_BSS215P  L=1u  W=1u
+.MODEL DMOS_BSS215P PMOS (KP=5.216 VTO=-0.9 THETA=0.02 ETA=0.01 LEVEL=3)
+
+* Drain resistance (temperature coefficient removed for ngspice)
+Rd    d1  d2  50m
+
+* Body diode
+Dbd   d2  s2  Dbt_BSS215P
+.MODEL Dbt_BSS215P D (BV=33 M=0.5 CJO=76.96p VJ=1)
+
+Dbody  d3  s2  DBODY_BSS215P
+.MODEL DBODY_BSS215P D (IS=15.35p N=1.15 RS=132.43m EG=1.12 TT=30n)
+Rdiode d1  d3  50m
+
+* Nonlinear gate-drain capacitance (Cgd)
+* Uses auxiliary PMOS switches to model voltage-dependent Cgd
+* Kept from original - this is critical for switching behaviour
+.MODEL sw_BSS215P PMOS (VTO=0 KP=10 LEVEL=1)
+Maux   g2  c   a   a   sw_BSS215P
+Maux2  b   d   g2  g2  sw_BSS215P
+Eaux   c   a   d2  g2  1
+Eaux2  d   g2  d2  g2  -1
+Cox    b   d2  350.34p
+.MODEL DGD_BSS215P D (M=0.65 CJO=350.34p VJ=0.5)
+Rpar   b   d2  1Meg
+Dgd    d2  a   DGD_BSS215P
+Rpar2  d2  a   10Meg
+
+* Gate-source capacitance
+Cgs   g2  s2  174.64p
+
+.ENDS BSS215P_L1

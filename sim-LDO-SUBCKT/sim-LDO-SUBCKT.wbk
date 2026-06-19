@@ -1,0 +1,68 @@
+{
+  "custom_cursors": 2,
+  "last_sch_text_sim_command": ".tran 5u 80m\n.options maxstep=100n method=gear\n.options reltol=1e-3 abstol=1e-9 vntol=1e-6\n.options gmin=1e-9\n.options itl1=200 itl4=200",
+  "tabs": [
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 5u 80m\n.options maxstep=100n method=gear\n.options reltol=1e-3 abstol=1e-9 vntol=1e-6\n.options gmin=1e-9\n.options itl1=200 itl4=200",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": false,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(152, 78, 163)",
+          "cursor1": {
+            "position": 0.018388375165125495,
+            "x_format": "3~s",
+            "y_format": "3~A"
+          },
+          "cursor2": {
+            "position": 0.04797886393659181,
+            "x_format": "3~s",
+            "y_format": "3~A"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~A"
+          },
+          "signal": "I(D3)",
+          "trace_type": 258
+        },
+        {
+          "color": "rgb(255, 127, 0)",
+          "signal": "I(R9)",
+          "trace_type": 258
+        },
+        {
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(/LDO_FB)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/LDO_OUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(LDO_IN)",
+          "trace_type": 257
+        }
+      ]
+    }
+  ],
+  "user_defined_signals": [],
+  "version": 7
+}
