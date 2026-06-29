@@ -32,30 +32,7 @@
           "trace_type": 257
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "cursor2": {
-            "position": 0.04795698924731183,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/OC_OUT)",
-          "trace_type": 257
-        },
-        {
           "color": "rgb(77, 175, 74)",
-          "cursor1": {
-            "position": 0.02580645161290323,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
           "signal": "V(/TH_OUT)",
           "trace_type": 257
         },

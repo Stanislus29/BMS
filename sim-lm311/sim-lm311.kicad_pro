@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "sim-LDO-SUBCKT.kicad_pro",
+    "filename": "sim-lm311.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -410,7 +410,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "sim-LDO-SUBCKT.wbk"
+      "workbook_filename": "sim-lm311.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -419,9 +419,9 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "sim-LDO-SUBCKT.kicad_sch",
+        "filename": "sim-lm311.kicad_sch",
         "name": "Root",
-        "uuid": "d4bc50a2-e541-43a2-bfb4-d9a873a3012e"
+        "uuid": "9afa5773-09d4-4600-854f-3bd11830c8cf"
       }
     ],
     "used_designators": "",
@@ -429,7 +429,7 @@
   },
   "sheets": [
     [
-      "d4bc50a2-e541-43a2-bfb4-d9a873a3012e",
+      "9afa5773-09d4-4600-854f-3bd11830c8cf",
       "Root"
     ]
   ],

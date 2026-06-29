@@ -1189,7 +1189,7 @@
 	)
 	(text "NTC\n"
 		(exclude_from_sim no)
-		(at 83.058 118.618 0)
+		(at 83.058 122.428 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3680,7 +3680,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=1 2=2"
-			(at 88.9 118.11 0)
+			(at 88.9 122.428 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3700,7 +3700,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "NTC_2PIN"
+		(property "Sim.Name" "ntc_2pin"
 			(at 88.9 116.84 0)
 			(hide yes)
 			(show_name no)

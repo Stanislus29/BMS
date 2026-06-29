@@ -1,0 +1,46 @@
+*$
+* TLV76701P - Behavioural model for ngspice/KiCad
+* Regulates V(FB,GND) = VREF = 0.8V via integrating error amplifier.
+* With R7=42.25k, R8=10k: VOUT = 0.8*(1 + 42.25/10) = 4.18V
+*
+*****************************************************************************
+
+.SUBCKT TLV76701_TRANS EN FB GND VIN VOUT
+.PARAM VREF=0.8 VENB=0.9 VDROP=0.35 ILIM=1.2 TTRN=500u UVLO=2.33
+
+* --- EN flag ---
+E_EN_OK  EN_OK_N 0 VALUE { (V(EN,GND)>VENB) ? 1 : 0 }
+R_EN     EN_OK_N EN_OK 1k
+C_EN     EN_OK 0 1n
+
+* --- VIN UVLO flag ---
+E_VIN_OK VIN_OK_N 0 VALUE { (V(VIN,GND)>UVLO) ? 1 : 0 }
+R_VIN    VIN_OK_N VIN_OK 1k
+C_VIN    VIN_OK 0 1n
+
+* --- READY: both flags high ---
+E_READY  READY_N 0 VALUE { (V(EN_OK)>0.5 && V(VIN_OK)>0.5) ? 1 : 0 }
+R_RDY    READY_N READY 1k
+C_RDY    READY 0 1n
+
+* --- Integrating error amplifier ---
+* When READY, integrates (VREF - V(FB,GND)) onto VCTRL
+* Resets VCTRL to 0 when not READY
+G_ERR   0 VCTRL VALUE { (V(READY)>0.5) ? (VREF - V(FB,GND)) * 10m : -V(VCTRL) * 10m }
+C_VCTRL VCTRL 0 1u IC=0
+
+* --- Output target: clamp to dropout ---
+E_VTGT  VTGT 0 VALUE { (V(READY)>0.5) ? MIN(MAX(V(VCTRL),0), MAX(V(VIN,GND)-VDROP,0)) : 0 }
+R_VTGT  VTGT 0 1Meg
+
+* --- Output voltage follower ---
+E_OUT   VOUT_INT 0 VALUE { V(VTGT) }
+R_OUT   VOUT_INT VOUT 10m
+
+* --- Current limit ---
+G_ILIM  VOUT GND VALUE { MAX(I(R_OUT)-ILIM, 0) * 100 }
+
+* --- Quiescent current ---
+G_IQ    VIN GND VALUE { (V(READY)>0.5) ? 50u : 1.5u }
+
+.ENDS TLV76701_TRANS

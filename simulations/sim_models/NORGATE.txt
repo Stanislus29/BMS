@@ -1,0 +1,8 @@
+* SN74AHC1G02 - Single 2-Input NOR Gate
+* Pins: Y A B VCC GND
+
+.SUBCKT SN74AHC1G02 Y A B VCC GND
+
+BOUT Y GND V={V(VCC) * u(V(VCC)*0.5 - V(A)) * u(V(VCC)*0.5 - V(B))}
+
+.ENDS SN74AHC1G02

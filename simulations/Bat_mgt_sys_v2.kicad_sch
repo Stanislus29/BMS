@@ -2740,6 +2740,16 @@
 		)
 		(uuid "6962244d-3dcf-44e1-8757-b1355b8ef972")
 	)
+	(text "DISCHRG = 0 4.2 20m 3.7 40m 3.3 60m 3.0\nCHRG = 0 3.3 20m 3.7 40m 4.0 60m 4.4"
+		(exclude_from_sim no)
+		(at 270.51 251.206 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "78ada4b0-1bde-4d09-b4aa-b96a218f9334")
+	)
 	(text ".tran 5u 150m\n.options maxstep = 100n\n.options method = gear\n.options reltol = 1e-3 abstol = 1e-9 vasbtol=1e-6\n.options gmin = 1e-9\n.options itl=200 itl4=200"
 		(exclude_from_sim no)
 		(at 373.634 45.466 0)
@@ -5275,7 +5285,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/SS14.txt"
+		(property "Sim.Library" "sim_models/SS14.txt"
 			(at 135.89 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5640,7 +5650,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-PP-MGT/models/BSS215P_L1.lib"
+		(property "Sim.Library" "sim_models/BSS215P_L1.lib"
 			(at 132.08 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -6081,7 +6091,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-OC-SUBCKT/models/MCP6561.txt"
+		(property "Sim.Library" "sim_models/MCP6561.txt"
 			(at 290.83 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -6399,7 +6409,7 @@
 				(justify left)
 			)
 		)
-		(property "Sim.Params" "PWL(0 4.2 20m 3.7 40m 3.5 60m 3.0)"
+		(property "Sim.Params" "PWL(0 3.3 20m 3.7 40m 4.0 60m 4.4)"
 			(at 169.164 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6658,7 +6668,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-LDO-SUBCKT/models/TLV76701P_ngspice.lib"
+		(property "Sim.Library" "sim_models/TLV76701P_ngspice.lib"
 			(at 153.67 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7366,7 +7376,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-PP-MGT/models/BSS215P_L1.lib"
+		(property "Sim.Library" "sim_models/BSS215P_L1.lib"
 			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -7936,7 +7946,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-OC-SUBCKT/models/NORGATE.txt"
+		(property "Sim.Library" "sim_models/NORGATE.txt"
 			(at 341.63 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -8229,7 +8239,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/SS14.txt"
+		(property "Sim.Library" "sim_models/SS14.txt"
 			(at 212.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -9105,7 +9115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "5"
 			(at 203.2 228.4701 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9498,7 +9508,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/KiCAD Projects/BMS-ANAG-T1/sim-OC-SUBCKT/models/MCP6561.txt"
+		(property "Sim.Library" "sim_models/MCP6561.txt"
 			(at 285.75 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9666,7 +9676,7 @@
 				)
 			)
 		)
-		(property "Value" "0.885"
+		(property "Value" "0.5"
 			(at 199.39 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9946,7 +9956,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "/home/stanislus/Documents/sim_models/SS14.txt"
+		(property "Sim.Library" "sim_models/SS14.txt"
 			(at 125.73 119.38 0)
 			(hide yes)
 			(show_name no)
