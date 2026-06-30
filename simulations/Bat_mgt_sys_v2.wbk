@@ -22,9 +22,9 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(152, 78, 163)",
+          "color": "rgb(55, 126, 184)",
           "cursor1": {
-            "position": 0.034676354029062086,
+            "position": 0.04707750952986023,
             "x_format": "3~s",
             "y_format": "3~V"
           },
@@ -32,20 +32,21 @@
             "x_format": "3~s",
             "y_format": "3~V"
           },
+          "signal": "V(+BAT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(166, 86, 40)",
+          "signal": "V(/BOUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(152, 78, 163)",
           "signal": "V(/LDO_IN)",
           "trace_type": 257
         },
         {
           "color": "rgb(77, 175, 74)",
-          "cursor2": {
-            "position": 0.08996036988110964,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
           "signal": "V(/LDO_OUT)",
           "trace_type": 257
         },

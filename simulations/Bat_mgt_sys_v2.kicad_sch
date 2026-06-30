@@ -6409,7 +6409,7 @@
 				(justify left)
 			)
 		)
-		(property "Sim.Params" "PWL(0 3.3 20m 3.7 40m 4.0 60m 4.4)"
+		(property "Sim.Params" "PWL(0 4.2 20m 3.7 40m 3.3 60m 3.0)"
 			(at 169.164 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9115,7 +9115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5"
+		(property "Value" "0"
 			(at 203.2 228.4701 0)
 			(show_name no)
 			(do_not_autoplace no)
