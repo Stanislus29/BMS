@@ -23,6 +23,15 @@
       "traces": [
         {
           "color": "rgb(102, 194, 165)",
+          "cursor1": {
+            "position": 0.07186261558784676,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
           "signal": "V(/+BAT)",
           "trace_type": 257
         },

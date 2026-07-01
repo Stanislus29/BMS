@@ -1725,6 +1725,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 143.51) (xy 134.62 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aada01b1-9554-43bf-be5e-0ca04b2f78f3")
+	)
+	(wire
+		(pts
 			(xy 85.09 67.31) (xy 88.9 67.31)
 		)
 		(stroke
@@ -2212,6 +2222,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "LDO_IN"
+		(shape input)
+		(at 134.62 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93867321-ecb1-45b4-93ba-79cee0d5e6d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.1367 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4802,6 +4836,52 @@
 				(path "/9afa5773-09d4-4600-854f-3bd11830c8cf"
 					(reference "#PWR05")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 238.76 152.4)
+		(size 15.24 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ad380112-4524-48d8-9f29-a85a96844d0e")
+		(property "Sheetname" "LDO part"
+			(at 238.76 151.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 238.76 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sim-lm311"
+				(path "/9afa5773-09d4-4600-854f-3bd11830c8cf"
+					(page "2")
 				)
 			)
 		)
